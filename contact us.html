@@ -1,0 +1,152 @@
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+
+
+    
+    <style type="text/css">
+        
+       
+        img{
+            width: 500px;
+            height: 504px;
+            float: left;
+            border: 5px solid whitesmoke;
+            
+        }
+
+        form{
+            width: 880px;
+            height: 485px;
+            padding: 10px;
+            text-align: center;
+            background-color: #18c7bd;
+             border: 5px solid whitesmoke;
+
+        }
+
+        .new{
+            margin-left: 300px;
+            border: 2px solid black;
+            width: 900px;
+            padding: 30px;
+            padding-right: 40px;
+            background-color: grey;
+        }
+
+        .name,.contact,.email{
+            width: 40%;
+        }
+
+        .submit{
+                width: 17%;
+                height: 25px;
+                border-radius: 6px;
+                font-weight: bold;
+                color: whitesmoke;
+                background-color: darkgreen;
+    
+        }
+
+       .submit:hover{
+                            background-color:palegreen;
+                            cursor: pointer;
+                            color: black;
+                        }
+
+            
+            .logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+            
+body{
+                background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("family-bg1.jpg");
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+.new{
+    margin-left: 250px;
+    padding-bottom:12px;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+
+     <div class="navbar">
+            
+            <img src="bookstay.png" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1><div style ="color:skyblue"><div style="font-family: Castellar">BOOKSTAY.COM </div></div></h1>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+        </div>
+
+<div class="new">
+    <img src="bg_contact.png">
+       <form>
+            
+            <h2>Share your Details here <br> We will call back</h2>
+
+            <input type="text" class="name" id="name" name="name" placeholder="*name"   pattern="[a-z]{1,15}" required /></b><br><br>
+
+            <input type="email" class="email" id="email" name="email" placeholder="*e-mail" required /><b></b><br><br>
+
+            <input type="tel" class="contact" id="contact" name="contact" placeholder="*contact" maxlength="10" size="10" pattern="[0-9]{10}" required /><b></b><br>
+
+            <em style="text-align: right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* is Mandatory Fields</em><br><br>
+
+            <input type="submit" name="submit" value="SUBMIT" class="submit"></input>
+ 
+       </form>
+</div>
+  
+</body>
+
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+
+ /* booking form */
+.book{
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/banner-img.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 40px 60px;
+
+}
+.book-form{
+    margin-left: 242px;
+    display: grid;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.book-form input[type = "submit"]{
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.book-form label, .book-form input{
+    width: 100%;
+}
+.book-form label{
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+.book-form input:not(.btn){
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+.book-form input:focus{
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 768px){
+    .book-form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+@media(min-width: 1170px){
+    .book-form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 1370px){
+    .book-form{
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+    .book{
+        height: 40vh;
+        display: grid;
+    }
+}
+@media(max-width: 500px){
+    .book{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    line-height: 1.6;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+.form2{
+    border: 2px solid black;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+h3{
+    font-size: 25px;
+}
+
+input[type="text"],input[type="email"],select{
+    width: 50%;
+    height: 30px;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn:hover{
+                            background-color:skyblue;
+                            cursor: pointer;
+                            color: black;
+                        }
+
+
+body{
+
+     background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("family-bg1.jpg");
+} 
+
+.line{
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+}
+
+.copyright{
+text-align: center;
+padding-top: 7px;
+font-size: 20px;
+
+}   
+
+a{
+    color: whitesmoke;
+}  
+
+img{
+    width: 100%;
+    display: block;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}                  
+
+
+</style>
+<body>
+    <div class="img">
+            <div class="navbar">    
+            <img src="bookstay.png" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1><div style ="color:skyblue"><div style="font-family: Castellar">BOOKSTAY.COM </div></div></h1>
+            <ul>
+                <li><a href="home.html">HOME</a></li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="contact us.html">CONTACT US</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+    </div>
+<hr></hr>
+<br>
+
+<div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date" min="2022-06-01" required >
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date" min="2022-06-01" required >
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult" required >
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children"  required >
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms" required >
+                </div>
+                
+            </form>
+        </div>  <br>    <hr></hr>   <br>
+
+   <div class="form2">
+        <form>
+            
+
+            <h1 style="text-align: center;">PAYMENT</h1>
+
+            <h3>Entre your detail's</h3>
+            <label><b>First Name</b></label><br>
+            <input type="text" name="first_name" required><br>
+
+            <label><b>Last Name</b></label><br>
+            <input type="text" name="last_name" required><br>
+
+            <label><b>Phone Number</b></label><br>
+            <input type="text" name="number" maxlength="10" size="10" pattern="[0-9]{10}" required /><br>
+
+            <label><b>E-Mail</b></label><br>
+            <input type="email" name="E-Mail" required><br>
+            <em>Confirmation and contact deatils of hotel staff will send to your e-mail</em><br><br>
+
+            <h3>Who are you booking for</h3><br>
+            <input type="radio" name="book" > I am the main guest<br>
+            <input type="radio" name="book" > Booking is for someone else<br>
+
+            <h3>Country/Region</h3>
+            <select name="country" >
+            <option value="ind" selected>INDIA</option>
+            <option value="us" >USA</option>
+            <option value="canada"> CANADA </option>
+            <option value="russia"> RUSSIA </option>
+            <option value=" afgan"> AFGANISTAN </option>
+            </select><br><br>
+
+
+            <h3>Estimated arrival time</h3>
+            <select name="time">
+            <option value="1" selected>I don't know</option>
+            <option value="2" >22:00 to 23:00</option>
+            <option value="3"> 23:00 to 00:00 </option>
+            <option value="4"> 00:00 to 1:00 next day</option>
+            <option value=" afgan"> 1:00 to 2:00 next  day </option>
+            </select><br><br>
+
+
+            <h3>Premiume facilities checked</h3> 
+            <img src="facilities2.png"/><br><br>
+
+            
+            <input type = "submit" class = "btn" value = "Book Now">
+                
+
+        </form>
+    </div>
+
+<br>    <hr></hr>   <br>
+
+    <div class="line">
+      <h3 class="copyright">If the copyright of any portion of our website belongs to you , <a href="contact us.html">contact us </a>&nbsp;&nbsp; and we will remove it.</h3>
+    </div>
+    
+<br>    <hr></hr>   <br>
+    
+</body>
+</html>

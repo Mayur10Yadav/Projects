@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ooty Hotels</title>
+    <link rel = "icon" href = "bookstay.png" type = "image/png">
+
+    <style type="text/css">
+
+
+body{
+                background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("family-bg1.jpg");
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+    
+.rooms{
+    margin: 40px 0;
+}
+.room{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: #fff;
+}
+.room-text{
+    padding: 5px 20px;
+}
+.room-text h3{
+    font-size: 24px;
+}
+.room-text ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+.room-text ul li{
+    padding: 7px 0;
+}
+.room-text ul li i{
+    color: var(--yellow);
+    margin-right: 10px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 30px;
+    font-weight: 900;
+    color: lightgreen;
+}
+.room-image{
+    overflow: hidden;
+}
+.room-image img{
+    transition: var(--transition);
+}
+.room-image:hover img{
+    transform: scale(1.1);
+}
+@media (min-width: 900px){
+    .rooms-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370px){
+    .rooms-container{
+        flex-direction: column;
+    }
+    .room{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .room-image{
+        flex: 1;
+    }
+    .room-image img{
+        height: 100%;
+    }
+    .room-text{
+        flex: 1;
+    }
+    .room:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    opacity: 0.45;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 8px 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+@media(max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+}
+.title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: var(--yellow);
+    border-bottom: 5px solid var(--dark);
+    width: 235px;
+    margin: 15px 0;
+}
+
+.sec-width{
+    width: 85vw;
+    margin: 0 auto!important;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="img">
+            <div class="navbar">    
+            <img src="bookstay.png" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1><div style ="color:skyblue"><div style="font-family: Castellar">BOOKSTAY.COM </div></div></h1>
+            <ul>
+                <li><a href="home.html">HOME</a></li></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="contact us.html">CONTACT US</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+    </div>
+<hr></hr>
+<section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>Ooty&nbsp;Hotels</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "hotel_ooty 1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3 class="title">Hotel&nbsp;Main-Point</h3>
+                        <ul>
+                             <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Near Big Mart, Ooty 011,
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Best Hotel For Family Stay.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Visit Once In Your Life.
+                            </li>
+                        </ul>
+                        <img src="facilities.png">
+                        <p class = "rate">
+                            <span>Rs.2999.00 /</span> Per Night
+                        </p>
+                        <a href="payment.html"><button type = "button" class = "btn">Book Now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "hotel_ooty 2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3 class="title">Hotel&nbsp;Zooom</h3>
+                        <ul>
+                             <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Near Big Mart, Ooty 012,
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Best Hotel For Family Stay.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Visit Once In Your Life.
+                            </li>
+                        </ul>
+                        <img src="facilities.png">
+                        <p class = "rate">
+                            <span>Rs.3999.00 /</span> Per Night
+                        </p>
+                        <a href="payment.html"><button type = "button" class = "btn">Book Now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "hotel_ooty 3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3 class="title">Hotel&nbsp;Kesari</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Near Big Mart, Ooty 013,
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Best Hotel For Family Stay.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Visit Once In Your Life.
+                            </li>
+                        </ul>
+                        <img src="facilities.png">
+                        <p class = "rate">
+                            <span>Rs.1999.00 /</span> Per Night
+                        </p>
+                        <a href="payment.html"><button type = "button" class = "btn">Book Now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+</section>
+</body>
+</html>
